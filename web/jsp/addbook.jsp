@@ -15,7 +15,7 @@
         <div class="container">
 
             <div class="d-flex justify-content-between align-items-center">
-                <h2>Edit book</h2>
+                <h2>Add book</h2>
 
             </div>
 
@@ -58,7 +58,7 @@
                         </div>
 
                         <div class="text-center">
-                            <button type="submit">EDIT</button>
+                            <button type="submit">ADD</button>
                         </div>
                     </form>
                 </div>

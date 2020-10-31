@@ -14,7 +14,7 @@
         <div class="container">
 
             <div class="d-flex justify-content-between align-items-center">
-                <h2>Edit reader</h2>
+                <h2>Add reader</h2>
 
             </div>
 
@@ -45,11 +45,11 @@
                         <table>
                             <tbody>
                             <tr class="row100 body">
-                                <td class="cell100 column1"> <input type="text" name="" value="Adam"> </td>
-                                <td class="cell100 column2"> <input type="text" name="" value="Neotdam"> </td>
-                                <td class="cell100 column3"> <input type="text" name="" value="784178546"> </td>
-                                <td class="cell100 column4"> <input type="text" name="" value="neotdam@rfrf"> </td>
-                                <td class="cell100 column5"> <a href="readeredit.jsp"><button type="button" name="button">Edit</button></a></button> </td>
+                                <td class="cell100 column1"> <input type="text" name="" placeholder="Name" value=""> </td>
+                                <td class="cell100 column2"> <input type="text" name="" placeholder="Surname" value=""> </td>
+                                <td class="cell100 column3"> <input type="text" name="" placeholder="Number" value=""> </td>
+                                <td class="cell100 column4"> <input type="text" name="" placeholder="Address" value=""> </td>
+                                <td class="cell100 column5"> <a href=""><button type="button" name="button">ADD</button></a></button> </td>
                             </tr>
                             </tbody>
                         </table>

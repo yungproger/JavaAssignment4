@@ -13,6 +13,12 @@
     </resource-ref>
 
    <welcome-file-list>
+       <welcome-file>jsp/index.jsp</welcome-file>
+       <welcome-file>jsp/readeredit.jsp</welcome-file>
        <welcome-file>jsp/books.jsp</welcome-file>
+       <welcome-file>jsp/bookedit.jsp</welcome-file>
+       <welcome-file>jsp/readers.jsp</welcome-file>
+
+
    </welcome-file-list>
 </web-app>

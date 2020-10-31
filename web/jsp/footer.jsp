@@ -1,12 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Lenovo
-  Date: 01.11.2020
-  Time: 0:59
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!-- ======= Footer ======= заинклюдить-->
 <footer id="footer">
 
     <div class="container d-md-flex py-4">

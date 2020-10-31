@@ -1,19 +1,12 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Lenovo
-  Date: 01.11.2020
-  Time: 0:59
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>AdminPrikin</title>
+    <title>Admin</title>
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
 
@@ -29,6 +22,8 @@
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 
@@ -47,3 +42,4 @@
         </nav>
     </div>
 </header><!-- End Header -->
+
