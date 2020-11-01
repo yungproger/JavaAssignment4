@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Lenovo
@@ -25,7 +26,7 @@
     <section id="contact" class="contact">
     <div class="container">
         <div >
-            <a href="addreader.jsp"><input id="q" type="submit" name="" value="ADD"><br></a>
+            <a href="${pageContext.request.contextPath}/jsp/addreader.jsp">ADD<br></a>
         </div>
     </div>
     </section>
@@ -43,7 +44,7 @@
                                 <th class="cell100 column1">Name</th>
                                 <th class="cell100 column2">Surname</th>
                                 <th class="cell100 column3">Telephone</th>
-                                <th class="cell100 column4">Email</th>
+                                <th class="cell100 column4">Address</th>
                                 <th class="cell100 column5"></th>
                             </tr>
                             </thead>
@@ -53,53 +54,16 @@
                     <div class="table100-body js-pscroll">
                         <table>
                             <tbody>
-
+                            <c:set var="readers" value='${requestScope["readers"]}'/>
+                            <c:forEach var="reader" items="${readers}">
                             <tr class="row100 body">
-                                <td class="cell100 column1">Mind & Body</td>
-                                <td class="cell100 column2">Yoga</td>
-                                <td class="cell100 column3">8:00 AM - 9:00 AM</td>
-                                <td class="cell100 column4">Adam Stewart</td>
-                                <td class="cell100 column5"><a href="readeredit.jsp">EDIT</a></td>
+                                <td class="cell100 column1">${reader.firstName}</td>
+                                <td class="cell100 column2">${reader.lastName}</td>
+                                <td class="cell100 column3">${reader.phoneNumber}</td>
+                                <td class="cell100 column4">${reader.address}</td>
+                                <td class="cell100 column5"><a href="${pageContext.request.contextPath}/jsp/readeredit.jsp">EDIT</a></td>
                             </tr>
-
-                            <tr class="row100 body">
-                                <td class="cell100 column1">Crit Cardio</td>
-                                <td class="cell100 column2">Gym</td>
-                                <td class="cell100 column3">9:00 AM - 10:00 AM</td>
-                                <td class="cell100 column4">Aaron Chapman</td>
-                                <td class="cell100 column5"><a href="readeredit.jsp">EDIT</a></td>
-                            </tr>
-
-                            <tr class="row100 body">
-                                <td class="cell100 column1">Wheel Pose Full Posture</td>
-                                <td class="cell100 column2">Yoga</td>
-                                <td class="cell100 column3">7:00 AM - 8:30 AM</td>
-                                <td class="cell100 column4">Donna Wilson</td>
-                                <td class="cell100 column5"><a href="readeredit.jsp">EDIT</a></td>
-                            </tr>
-
-                            <tr class="row100 body">
-                                <td class="cell100 column1">Wheel Pose Full Posture</td>
-                                <td class="cell100 column2">Yoga</td>
-                                <td class="cell100 column3">7:00 AM - 8:30 AM</td>
-                                <td class="cell100 column4">Donna Wilson</td>
-                                <td class="cell100 column5"><a href="readeredit.jsp">EDIT</a></td>
-                            </tr>
-                            <tr class="row100 body">
-                                <td class="cell100 column1">Wheel Pose Full Posture</td>
-                                <td class="cell100 column2">Yoga</td>
-                                <td class="cell100 column3">7:00 AM - 8:30 AM</td>
-                                <td class="cell100 column4">Donna Wilson</td>
-                                <td class="cell100 column5"><a href="readeredit.jsp">EDIT</a></td>
-                            </tr>
-                            <tr class="row100 body">
-                                <td class="cell100 column1">Wheel Pose Full Posture</td>
-                                <td class="cell100 column2">Yoga</td>
-                                <td class="cell100 column3">7:00 AM - 8:30 AM</td>
-                                <td class="cell100 column4">Donna Wilson</td>
-                                <td class="cell100 column5"><a href="readeredit.jsp">EDIT</a></td>
-                            </tr>
-
+                            </c:forEach>
                             </tbody>
                         </table>
                     </div>

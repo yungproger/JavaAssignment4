@@ -9,7 +9,7 @@
         <module name="JavaAssignment4" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="14">
       <module name="JavaAssignment4" target="1.8" />
     </bytecodeTargetLevel>
   </component>
