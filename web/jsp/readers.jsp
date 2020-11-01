@@ -24,9 +24,8 @@
 
     <section id="contact" class="contact">
     <div class="container">
-        <div style="display: flex;margin-left: 40%">
-            <a href="addreader.jsp"><input id="q" type="submit" name="" value="ADD"><br></a>
-            <a href="#"><input id="q" type="submit" name="" value="SORT"><br></a>
+        <div style="display: flex;margin-left: 45%">
+            <a href="addreader.jsp"><button id ="q">ADD</button><br></a>
         </div>
     </div>
     </section>
