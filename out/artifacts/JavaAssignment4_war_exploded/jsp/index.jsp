@@ -11,9 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-<a href="jsp/books.jsp">books</a>
+<!--<a href="jsp/books.jsp">books</a>
 <a href="jsp/bookedit.jsp">bookedit</a>
 <a href="jsp/readeredit.jsp">readeredit</a>
-<a href="jsp/readers.jsp">readers</a>
+<a href="jsp/readers.jsp">readers</a>-->
 </body>
 </html>

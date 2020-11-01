@@ -22,12 +22,11 @@
         </div>
     </section><!-- End Breadcrumbs -->
 
-
-
     <section id="contact" class="contact">
         <div class="container">
-<div >
+<div style="display: flex;margin-left: 40%">
     <a href="addbook.jsp"><input id="q" type="submit" name="" value="ADD"><br></a>
+    <a href="#"><input id="q" type="submit" name="" value="SORT"><br></a>
 </div>
             <!--book container -->
             <div class="row justify-content-center" data-aos="fade-up">
