@@ -3,18 +3,18 @@ package clients;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import models.Book;
+
 import models.Reader;
 import org.glassfish.jersey.client.ClientConfig;
 
-import javax.print.DocFlavor;
+
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
-import java.util.List;
+import javax.ws.rs.core.Response;
+import java.util.Stack;
 
-import static clients.BookClient.getWebTarget;
 
 public class ReaderClient {
 
@@ -26,12 +26,12 @@ public class ReaderClient {
         return client.target(baseUri);
     }
 
-    public static List<Reader> getAll(){
+    public static Stack<Reader> getAll(){
         try {
             WebTarget target = getWebTarget();
             String readersString = target.request().accept(MediaType.APPLICATION_JSON).get(String.class);
             ObjectMapper mapper = new ObjectMapper();
-            List<Reader> readers = mapper.readValue(readersString, new TypeReference<List<Reader>>() {
+            Stack<Reader> readers = mapper.readValue(readersString, new TypeReference<Stack<Reader>>() {
             });
             return readers;
 
@@ -48,5 +48,10 @@ public class ReaderClient {
                 .get(Reader.class);
         System.out.println(reader);
         return reader;
+    }
+
+    public static void delete(long id){
+        WebTarget target = getWebTarget();
+        Response response = target.path(id + "").request().delete(Response.class);
     }
 }

@@ -45,4 +45,8 @@ public class BookClient {
         return book;
     }
 
+    public static void delete(String isbn){
+        WebTarget target = getWebTarget();
+        Response response = target.path(isbn).request().delete(Response.class);
+    }
 }

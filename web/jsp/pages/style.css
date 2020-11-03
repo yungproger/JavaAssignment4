@@ -1,0 +1,81 @@
+body{
+  background-color:black;
+
+}
+main{
+  width:100%;
+  heingt:100vh;
+  padding:50px;
+}
+div.section{
+  width:100%;
+  height:100vh;
+  display: relative;
+  align-content:center;
+}
+
+div.book{
+  margin-top:50px;
+  border: 0px solid black;
+  border-radius:10px;
+  padding:10px;
+  width:100%;
+  margin:auto;
+}
+div.row{
+  margin-top:50px;
+  border: 0px solid black;
+  border-radius:10px;
+  padding:15px 50px;
+  width:80%;
+  margin:auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  align-content:left;
+  width:150px;
+}
+div.buttons{
+  display:flex;
+  padding:15px 50px;
+  width:27%;
+  margin:auto;
+}
+table.table{
+  margin:auto;
+  width:70%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding:15px 50px;
+  border-radius:10px;
+
+
+}
+div.bookedit{
+  margin-top:50px;
+  border: 0px solid black;
+  border-radius:10px;
+  padding:15px 50px;
+  width:80%;
+  margin:auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+div.login{
+  position:relative;
+  margin-top:50px;
+  border: 0px solid black;
+  border-radius:10px;
+  padding:15px 50px;
+  width:50%;
+  margin:auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+div.box{
+  padding: 100px 300px;
+  width: 100%;
+  height: 600px;
+}

@@ -1,18 +1,16 @@
 package clients;
 
-
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import models.Book;
 import org.glassfish.jersey.client.ClientConfig;
-
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 
-import static clients.BookClient.getWebTarget;
 
 public class BorrowClient {
 
@@ -39,6 +37,11 @@ public class BorrowClient {
         return null;
     }
 
+    public static void delete(long readerId, String isbn){
+        WebTarget target = getWebTarget();
+        Response response = target.path(readerId + "/" + isbn).request().delete(Response.class);
+        System.out.println(response);
+    }
 
 
 
